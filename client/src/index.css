@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Elemence Brand Colors */
+  --primary: 181 100% 36%; /* #00ADB5 */
+  --primary-dark: 182 100% 28%; /* #008B91 */
+  --primary-light: 183 65% 57%; /* #4FCDD5 */
+  --primary-foreground: 0 0% 100%;
+  
+  --secondary: 204 72% 53%; /* #3498db */
+  --secondary-dark: 204 70% 42%; /* #2980b9 */
+  --secondary-light: 204 64% 63%; /* #5DACE4 */
+  --secondary-foreground: 0 0% 100%;
+  
+  /* UI Colors */
+  --background: 0 0% 100%;
+  --foreground: 0 0% 13%; /* #212121 */
+  --muted: 0 0% 96%;
+  --muted-foreground: 0 0% 46%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 0 0% 13%;
+  --card: 0 0% 100%;
+  --card-foreground: 0 0% 13%;
+  --border: 0 0% 90%;
+  --input: 0 0% 90%;
+  --accent: 183 64% 93%; /* #E3F6F7 */
+  --accent-foreground: 181 100% 36%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 0 0% 13%;
+  --radius: 0.5rem;
+
+  /* Text Colors */
+  --text-primary: 0 0% 13%; /* #212121 */
+  --text-secondary: 0 0% 20%; /* #333333 */
+  --text-light: 0 0% 46%; /* #757575 */
+}
+
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --primary: 207 77% 53%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 187 100% 36%;
+  --secondary-foreground: 0 0% 100%;
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 240 4.9% 83.9%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', system-ui, sans-serif;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Poppins', system-ui, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-primary px-8 py-3 text-base font-medium text-primary-foreground shadow-sm transition-all hover:bg-primary-dark hover:-translate-y-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center rounded-full border-2 border-primary bg-transparent px-8 py-3 text-base font-medium text-primary shadow-sm transition-all hover:bg-primary hover:text-primary-foreground hover:-translate-y-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary;
+  }
+
+  .section-container {
+    @apply container mx-auto px-6 md:px-12 z-10;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-5xl font-bold mb-4;
+  }
+
+  .section-subtitle {
+    @apply text-[hsl(var(--dark-gray))] text-lg max-w-3xl mx-auto;
+  }
+
+  .card-shadow {
+    @apply shadow-[0_4px_20px_rgba(0,0,0,0.05)];
+  }
+
+  .card-shadow-hover {
+    @apply shadow-[0_8px_30px_rgba(0,0,0,0.1)];
+  }
+}
+
+/* Water drops */
+.water-drop {
+  @apply absolute bg-primary/30 rounded-full;
+  animation: water-drop 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+@keyframes water-drop {
+  0% { transform: translateY(0) scale(1); opacity: 0.7; }
+  50% { transform: translateY(20px) scale(0.9); opacity: 0.5; }
+  100% { transform: translateY(40px) scale(0.8); opacity: 0; }
+}
+
+/* Animation classes */
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Section Styles */
+.section {
+  @apply min-h-screen w-screen flex items-center justify-center relative p-4 md:p-8;
+  overflow: hidden;
+}
+
+/* Glass effect */
+.glass-effect {
+  @apply bg-white/15 backdrop-blur-md border border-white/20 rounded-xl;
+}
+
+@media (max-width: 768px) {
+  .section {
+    @apply h-auto min-h-screen w-full;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary rounded;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary-dark;
+}

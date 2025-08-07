@@ -1,0 +1,246 @@
+# AI Prompt for Creating a GSAP Horizontal Scrolling Website with Modern UX/UI
+
+I need you to act as a professional frontend developer and design a complete modern, responsive website using HTML, CSS, JavaScript, and GSAP for animations. Follow the instructions carefully:
+
+⸻
+
+## 1. 🎯 Project Objective:
+
+Create a premium water company website (Hariamace) with smooth horizontal scrolling and fluid GSAP animations. The site should feature a modern, clean interface with interactive elements, parallax effects, and scroll-triggered animations. The design should feel premium and convey purity, wellness, and quality while implementing cutting-edge UX/UI principles and responsive design across all devices.
+
+⸻
+
+## 2. 🧱 Website Structure & Features:
+
+* **Horizontal Scrolling Layout**:
+  * Implement full horizontal page scrolling using GSAP and ScrollTrigger
+  * Create a progress bar indicator showing scroll position
+  * Implement smooth scrolling between sections when navigation links are clicked
+  * Provide intuitive scroll direction indicators for better user orientation
+
+* **Sections Required**:
+  * Loading screen with animated logo and transition
+  * Fixed header with transparent-to-solid effect on scroll
+  * Hero section with animated headings, CTA buttons, and floating water elements
+  * About section with company story, statistics, and feature cards
+  * Water composition section featuring interactive mineral visualization
+  * Advantages section with comparison chart and animated cards
+  * Why Choose Us section with icon-based cards
+  * Product features section with image and checklist
+  * Process section with animated timeline/steps
+  * Testimonials section with simple slider
+  * Blog section with hover-effect cards
+  * Contact section with form validation
+  * Footer with multiple columns and newsletter signup
+
+⸻
+
+## 3. 🎨 Design Specifications:
+
+* **Color Palette**:
+  * Primary colors: Use blues (#3498db, #00ADB5) to evoke water and purity
+  * Secondary colors: Clean whites and light grays for main backgrounds
+  * Dark grays/blacks for text (#333333, #212121)
+  * Accent colors: Light blues for highlights and water effects
+  * Implement color with a 60-30-10 rule for visual harmony
+  * Include accessible color contrast ratios (WCAG AA compliance minimum)
+
+* **Typography**:
+  * Primary font: 'Poppins' from Google Fonts with varied weights (300, 400, 500, 600, 700)
+  * Large, bold headlines for section titles
+  * Clean, readable text with proper hierarchy
+  * Animated split-text effect for main headings
+  * Implement fluid typography that scales proportionally across device sizes
+  * Maintain comfortable line heights (1.5-1.7) and character spacing for readability
+
+* **Visual Elements**:
+  * Water-themed imagery and icons
+  * Subtle particle/water drop animations
+  * Floating/parallax elements
+  * Drop shadows and subtle gradients for depth
+  * Interactive hover states for all clickable elements
+  * Use consistent corner radiuses throughout the design
+  * Apply strategic use of whitespace to create visual breathing room
+
+⸻
+
+## 4. 🚀 Animation & Interaction Requirements:
+
+* **GSAP Specific Animations**:
+  * Implement main horizontal scrolling with GSAP ScrollTrigger
+  * Create staggered entrance animations for cards and list items
+  * Animate section-specific elements as they enter/exit the viewport
+  * Implement parallax effects for background elements
+  * Create a floating animation for the hero image
+  * Add water-drop animations with custom keyframes
+  * Implement split-text animations for main headings
+  * Create a drawing animation for the process timeline
+
+* **Interactive Elements**:
+  * Hover animations for all cards with scale and shadow effects
+  * Navigation highlighting based on current section
+  * Custom cursor effect (optional)
+  * Form validation with animated feedback
+  * Testimonial slider with dot navigation
+  * Add subtle microinteractions for buttons, links, and form elements
+  * Implement state changes that provide clear visual feedback
+
+⸻
+
+## 5. 💻 Technical Requirements:
+
+* **File Structure**:
+  * index.html - Main HTML structure
+  * style.css - All styling with CSS variables
+  * script.js - Site initialization and basic functionality
+  * gsap-animations.js - All GSAP-specific animations and ScrollTrigger setup
+
+* **Libraries Required**:
+  * GSAP core
+  * ScrollTrigger plugin
+  * ScrollToPlugin
+  * Font Awesome for icons
+
+* **Code Organization**:
+  * Use clear, semantic HTML5
+  * Implement CSS variables for colors, shadows, transitions
+  * Create modular, reusable JavaScript functions
+  * Implement proper error handling and performance optimization
+  * Include detailed comments for all major sections and functions
+
+⸻
+
+## 6. 🌟 Modern UX/UI Requirements:
+
+* **Design System Approach**:
+  * Create a consistent component library (buttons, cards, form elements)
+  * Implement unified spacing system using CSS variables
+  * Establish clear visual hierarchy across all sections
+  * Use consistent interaction patterns throughout the site
+
+* **Modern UI Patterns**:
+  * Implement layered design with depth and dimensionality
+  * Use subtle animations to guide user attention
+  * Add contextual interfaces that respond to user behavior
+  * Implement skeleton loading states for content
+  * Use glassmorphic elements for depth and sophistication
+
+* **UX Enhancements**:
+  * Provide clear visual and interactive feedback for all user actions
+  * Implement intuitive navigation patterns with current section indicators
+  * Use progressive disclosure for complex information
+  * Add scroll hints and directional cues for horizontal scrolling
+  * Implement smart defaults in forms with inline validation
+  * Design for scanning with clear section headings and concise text
+  * Add scroll-to-top/reset functionality for easy navigation
+
+* **Microinteractions**:
+  * Button state changes (hover, active, focused)
+  * Form field focus and validation feedback
+  * Subtle animation on scroll progress
+  * Hover effects for cards and interactive elements
+  * Loading indicators and transitions between states
+
+⸻
+
+## 7. 📱 Comprehensive Responsive Design:
+
+* **Device Strategy**:
+  * Desktop (1200px+): Full horizontal scrolling experience
+  * Tablet (768px-1199px): Modified horizontal scrolling or adaptive layout
+  * Mobile (320px-767px): Convert to vertical scrolling for natural mobile experience
+  * Consider foldable devices and ultrawide monitors
+
+* **Responsive Techniques**:
+  * Implement fluid grid systems (not fixed pixel values)
+  * Use relative units (rem, em, vh, vw) instead of pixels
+  * Apply CSS Grid for complex layouts with fallbacks
+  * Implement proper breakpoints with mobile-first approach
+  * Use appropriate touch targets (minimum 44×44px) for mobile interfaces
+  * Ensure text remains readable at all viewport sizes (minimum 16px body text)
+
+* **Mobile-Specific UX**:
+  * Convert horizontal scroll to vertical scroll on small devices
+  * Implement mobile-optimized navigation (hamburger menu)
+  * Adjust animation complexity for better performance
+  * Optimize touch interactions with appropriate hit areas
+  * Consider thumb zones for important interactive elements
+  * Implement appropriate gesture controls for mobile users
+  * Design for both portrait and landscape orientations
+
+* **Performance Considerations**:
+  * Optimize images with responsive image techniques (srcset, sizes)
+  * Reduce animation complexity on lower-powered devices
+  * Implement lazy loading for off-screen content
+  * Consider reduced motion preferences
+  * Test performance across various device capabilities
+
+⸻
+
+## 8. 🧠 Special Implementation Details:
+
+* Implement debug-safe loading screen that bypasses on development
+* Create section-specific ScrollTrigger animations tied to the horizontal scroll position
+* Build a scroll progress indicator showing current position
+* Add active state highlighting for navigation based on scroll position
+* Implement proper pinning and smooth transitions between sections
+* Create interactive hover effects for all cards and buttons
+* Handle window resizing with proper recalculation of scroll distances
+* Implement feature detection and provide appropriate fallbacks
+* Consider offline capabilities with service workers
+
+⸻
+
+## 9. ♿ Accessibility Requirements:
+
+* Maintain proper heading hierarchy (h1-h6)
+* Include appropriate ARIA labels and roles
+* Ensure keyboard navigability throughout the site
+* Support screen readers with semantic HTML
+* Implement focus states for all interactive elements
+* Add skip-to-content links for keyboard users
+* Respect user preferences for reduced motion
+* Ensure color is not the only means of conveying information
+* Maintain text contrast ratios of at least 4.5:1 for normal text and 3:1 for large text
+* Provide alternative navigation for users who may struggle with horizontal scroll
+
+⸻
+
+## 10. 🎬 Animation Specifications:
+
+* **Loading & Initial View**:
+  * Fade in hero elements with staggered timing
+  * Animate primary heading with split-text character animation
+  * Implement subtle floating animation for hero image
+  * Add water drop animations in background
+
+* **Scroll Animations**:
+  * Trigger card reveals with opacity and Y-position changes
+  * Animate mineral cards with side entry effects
+  * Create drawing effect for process timeline
+  * Implement parallax effects for icons and background elements
+  * Add subtle rotation effects for spherical elements
+
+* **Interactive Animations**:
+  * Scale and shadow changes on hover for cards
+  * Button hover animations with Y-position shift
+  * Form input focus animations
+  * Process step hover effects with color transitions
+  * Provide visual feedback for all interactive elements
+  * Implement transition animations between states
+
+⸻
+
+## 11. Output Requirements:
+
+* Provide complete, well-commented HTML, CSS and JavaScript files
+* Ensure all animations are optimized for performance
+* Include fallbacks for older browsers
+* Make sure the site is fully responsive across devices
+* Implement best practices for accessibility
+* Add comprehensive interaction states for all elements
+* Test across multiple devices and browsers to ensure consistent experience
+
+⸻
+
+Please create a complete implementation of this website that incorporates all of these features and follows modern web development best practices. The site should be visually impressive with smooth animations that enhance rather than distract from the content, while maintaining exceptional performance and accessibility across all devices. The user experience should feel intuitive and delightful, with special attention to responsive behavior and touch interactions on mobile devices.
